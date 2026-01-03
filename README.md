@@ -36,6 +36,6 @@ The same thing applies here! The transmission is not very stable, has alot of ha
 - https://github.com/bababooex/raspberrypi-subghz-ASK/tree/main - My previous code -> reusing script logic, no need to reimplement, just rewrite
 - https://github.com/F5OEO/librpitx - The original librpitx, basically what I forked from
 # TO DO
-- fix video stability(, currently runs well with test pattern and image)
+- maybe make video more stable, but would require modding
 # Credits
 librpitx by Evariste Courjaud F5OEO
