@@ -38,4 +38,4 @@ The same thing applies here! The transmission is not very stable, has alot of ha
 # TO DO
 - fix video stability(, currently runs well with test pattern and image)
 # Credits
-Evariste Courjaud F5OEO
+librpitx by Evariste Courjaud F5OEO
