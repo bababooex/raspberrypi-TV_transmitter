@@ -29,7 +29,7 @@ void generate_test_pattern(uint8_t *buf, int width, int height)
 void tv_transmitter(uint64_t freq, int mode, const char *path)
 {
     const int SR = 1000000;
-    //frame size, not high qualit, but somehow stable
+    //frame size, not high quality, but somehow stable
     const int WIDTH = 52;
     const int HEIGHT = 625;
     const int FRAME_SIZE = WIDTH * HEIGHT;
