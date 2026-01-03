@@ -10,6 +10,7 @@ sudo apt install imagemagick
 //for ffmpeg
 sudo apt install ffmpeg
 ```
+You also need to create videos and images folders in app folder and then put images and videos in them. Various formats of images and mp4 for video is supported.
 # Usage
 Basically same as in the original librpitx, with minor changes
 ```
