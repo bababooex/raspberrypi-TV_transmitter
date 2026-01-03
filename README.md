@@ -30,7 +30,7 @@ sudo ./menu.sh
 Bababooey shitty test pattern, but pretty stable
 ![TX](images/bababooey-tx.png)
 # Warning
-Like author says: "Rpitx is a software made for educational on RF system. It has not been tested for compliance with regulations governing transmission of radio signals. You are responsible for using your Raspberry Pi legally."
+Like original author says: "Rpitx is a software made for educational on RF system. It has not been tested for compliance with regulations governing transmission of radio signals. You are responsible for using your Raspberry Pi legally."
 The same thing applies here! The transmission is not very stable, has alot of harmonics and it is definitelly not legal in this sense. The range can be few meters, so dont transmit on bad frequencies (FM, AIR etc.) or at least add a filter!
 # External references
 - https://github.com/bababooex/raspberrypi-subghz-ASK/tree/main - My previous code -> reusing script logic, no need to reimplement, just rewrite
