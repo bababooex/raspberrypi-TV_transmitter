@@ -117,9 +117,9 @@ int main(int argc, char *argv[])
     {
         fprintf(stderr,
             "Usage:\n"
-            "  tv_tx --pattern [--freq Hz]\n"
-            "  tv_tx --image file.gray [--freq Hz]\n"
-            "  tv_tx --video - [--freq Hz]\n");
+            "  testrpitx --pattern [--freq Hz]\n"
+            "  testrpitx --image file.gray [--freq Hz]\n"
+            "  testrpitx --video - [--freq Hz]\n");
         return 1;
     }
 
