@@ -138,7 +138,8 @@ while true; do
     fi
        whiptail --msgbox "Transmitting video!\nPress Ctrl+C to stop." 10 50
 
-    ffmpeg -i "$VIDEO_DIR/$VIDEO" \
+    ffmpeg -re -i "$VIDEO_DIR/$VIDEO" \
+      -r 25 \
       -vf scale=${WIDTH}:${HEIGHT},format=gray \
       -pix_fmt gray \
       -f rawvideo pipe:1 | "$TV_SCRIPT" --video - --freq "$FREQ" || whiptail --msgbox "Error running transmitter script."
