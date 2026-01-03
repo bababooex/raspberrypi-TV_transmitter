@@ -73,8 +73,11 @@ while true; do
       --menu "Choose image to transmit:" 20 60 10 \
       $IMAGE_MENU 3>&1 1>&2 2>&3)
 
-    [[ -z "$IMAGE" ]] && continue
-
+    if  [[ -z "$IMAGE" ]]; then
+        whiptail --msgbox "Going back to menu!" 10 50
+        continue
+    fi
+    
     magick convert "$IMAGE_DIR/$IMAGE" \
       -resize ${WIDTH}x${HEIGHT}! \
       -colorspace Gray \
@@ -88,6 +91,7 @@ while true; do
 
     if [ -z "$FREQ" ]; then
         whiptail --msgbox "Going back to menu!" 10 50
+        rm -f /tmp/tv_image.gray
         continue
     fi
        whiptail --msgbox "Transmitting image!\nPress Ctrl+C to stop." 10 50
@@ -117,7 +121,10 @@ while true; do
       --menu "Choose video to transmit:" 20 60 10 \
       $VIDEO_MENU 3>&1 1>&2 2>&3)
 
-    [[ -z "$VIDEO" ]] && continue
+    if  [[ -z "$VIDEO" ]]; then
+        whiptail --msgbox "Going back to menu!" 10 50
+        continue
+    fi
 
     FREQ=$(whiptail --inputbox \
       "Enter transmit frequency (Hz):" \
