@@ -1,6 +1,5 @@
 #!/bin/bash
 #Script uses whiptail to create "user friendly" interface
-#Video currently doesnt run very well, so needs update
 # === File configuration and size ===
 TV_SCRIPT="./testrpitx"
 IMAGE_DIR="./images"
