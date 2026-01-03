@@ -1,5 +1,5 @@
 # raspberrypi-TV_transmitter
-Experimentation with transmitting analog video with raspberry pi gpio. Credit goes to Evariste Courjaud F5OEO, I just added script for using the analog tv function from librpitx and modified original testrpitx code, nothing too special. Note that it made for PAL-L system, otherwise it will not lock well on the image.
+Experimentation with transmitting analog video with raspberry pi gpio. Credit goes to Evariste Courjaud F5OEO, I just added script for using the analog tv function from librpitx and modified original testrpitx code, nothing too special. Note that it is made for PAL-L system, otherwise it will not lock well on the image.
 # Requirements
 The script requires ffmpeg for video and ImageMagick for image conversion, you can install them by running:
 ```
